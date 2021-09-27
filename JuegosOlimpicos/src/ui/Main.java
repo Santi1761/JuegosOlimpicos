@@ -31,10 +31,10 @@ public class Main {
 		System.out.println("Por favor ingresa la cantidad de paises:");
 		int amount = sc.nextInt();
 		sc.nextLine();
-		System.out.println("Ingrese los datos separados por un ;");	
+		System.out.println("Ingrese los datos NUMERICOS separados por un ;, ASI :)");	
 		
 		for(int i=0; i<amount;i++) {
-			System.out.println("Pais");
+			System.out.println("\"Nombre;OroM;PlataM;BronceM;OroF;PlataF;BronceF\\n");
 			String pais = br.readLine();
 			addPais(pais);
 		}		
@@ -42,8 +42,7 @@ public class Main {
 		printF();
 		Medallas();
 		SelectionSort();
-		InsertionSort();
-				
+		InsertionSort();				
 	}
 	
 	
@@ -106,7 +105,7 @@ public class Main {
 		for(int i=0; i<paises.size(); i++) {
 			System.out.println(pais.get(i).getName()+" "+pais.get(i).getmOro()+" "+pais.get(i).getmPlata()+" "+pais.get(i).getmBronce());
 		}
-		System.out.println("----------");
+		System.out.println("//////////////");
 	}
 	
 	public static void printF() {
@@ -115,7 +114,7 @@ public class Main {
 		for(int i=0; i<pais.size(); i++) {
 			System.out.println(pais.get(i).getName()+" "+pais.get(i).getfOro()+" "+pais.get(i).getfPlata()+" "+pais.get(i).getfBronce());
 		}
-		System.out.println("----------");
+		System.out.println("//////////////");
 	}
 	
 	public static void SelectionSort() {
@@ -124,7 +123,7 @@ public class Main {
 		for(int i=0; i<paises.size(); i++) {
 			System.out.println(paises.get(i).getName()+" "+paises.get(i).getcOro()+" "+paises.get(i).getcPlata()+" "+paises.get(i).getcBronce());
 		}
-		System.out.println("----------");
+		System.out.println("//////////////");
 	}
 	
 	public static void InsertionSort() {
